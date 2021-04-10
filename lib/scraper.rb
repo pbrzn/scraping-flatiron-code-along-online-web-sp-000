@@ -15,9 +15,9 @@ class Scraper
   
   def make_courses
     course = Course.new
-    course.title = get_courses.css(".h2")
-    course.schedule = 
-    course.description = 
+    course.title = get_courses.text.strip
+    #course.schedule = 
+    #course.description = 
   end
   
   def print_courses
