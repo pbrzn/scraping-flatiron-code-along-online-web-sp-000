@@ -14,10 +14,11 @@ class Scraper
   end
   
   def make_courses
-    course = Course.new
-    course.title = get_courses.text.strip
-    #course.schedule = 
-    #course.description = 
+    new_course=Course.new
+    get_courses.each do |course|
+      new_course.title = 
+      new_course.schedule = 
+      new_course.description = 
   end
   
   def print_courses
