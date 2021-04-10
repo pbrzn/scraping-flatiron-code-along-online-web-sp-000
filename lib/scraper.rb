@@ -16,9 +16,7 @@ class Scraper
   def make_courses
     new_course=Course.new
     get_courses.each do |course|
-      new_course.title = 
-      new_course.schedule = 
-      new_course.description = 
+      
   end
   
   def print_courses
