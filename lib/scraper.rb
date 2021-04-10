@@ -15,7 +15,7 @@ class Scraper
   
   def make_courses
     course = Course.new
-    course.title = 
+    course.title = get.courses
     course.schedule = 
     course.description = 
   end
